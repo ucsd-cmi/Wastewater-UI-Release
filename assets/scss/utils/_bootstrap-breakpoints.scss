@@ -1,0 +1,15 @@
+// used within breakpoints
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+// the actual breakpoint mixins
+@import "~bootstrap/scss/mixins/breakpoints";
+
+$grid-breakpoints: (xs: 0,
+    sm: 375px,
+    md: 768px,
+    lg: 1024px,
+    xl: 1200px,
+    xxl: 1440px,
+    xxxl:1600px,
+);

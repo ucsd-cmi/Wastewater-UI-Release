@@ -1,0 +1,44 @@
+.inputRow {
+  position: relative;
+}
+.inputIcon {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.input {
+  padding-left: 1.5rem;
+}
+
+.detected {
+  background-color: #f9e5e4;
+}
+
+.notDetected {
+  background-color: #daebf4;
+}
+
+.calendarTable {
+  width: 100%;
+  transform: scaleY(-1);
+  margin-bottom: 1rem;
+  .bar {
+    border-bottom: 1px solid #000;
+    > td {
+      position: relative;
+      top: 0.3125rem;
+    }
+  }
+  .dates {
+    transform: scaleY(-1);
+    > td {
+      position: relative;
+      top: 2.5rem;
+      left: -0.2rem;
+    }
+  }
+  .lastTr {
+    width: 1%;
+  }
+}

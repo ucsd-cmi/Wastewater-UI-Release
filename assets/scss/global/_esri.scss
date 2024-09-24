@@ -1,0 +1,117 @@
+@import "../../../public/assets/esri/themes/light/main.css";
+:focus {
+  outline: none !important;
+}
+
+::-moz-focus-inner {
+  border: 0 !important;
+}
+
+.esri-search__container > .esri-widget--button {
+  display: none !important;
+}
+
+.esri-expand__panel {
+  &,
+  & > .esri-widget--button {
+    height: 3.838rem;
+    width: 1.75rem;
+    background-image: url("/mobile_legend.png") !important;
+  }
+}
+
+.esri-expand__container--expanded > .esri-expand__panel {
+  position: absolute;
+  right: 14.375rem;
+}
+
+.esri-expand__content {
+  margin: 0 !important;
+}
+
+.esri-view-width-xsmall .esri-expand--auto .esri-expand__container--expanded {
+  background: rgba(255, 255, 255, 0) !important;
+}
+
+.esri-input {
+  color: #4d4d4d;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.7075em;
+  font-family: Arial, monospace;
+}
+
+.esri-search__suggestions-menu {
+  margin-top: 1rem;
+  margin-left: -2.875rem;
+  border: 1px solid #4d4d4d;
+  box-sizing: border-box;
+  border-radius: 0.25rem;
+  padding: 1rem 1rem 0.5rem 1rem;
+  width: 36.75rem;
+}
+
+.esri-input:focus {
+  outline: none;
+}
+
+.esri-menu__list-item {
+  padding: 0;
+  height: 1.7075rem;
+  color: #4d4d4d;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.7075rem;
+  font-family: Arial, monospace;
+  border: 0;
+  margin-bottom: 0.5rem;
+}
+
+.esri-popup__footer {
+  display: none;
+}
+
+.esri-attribution {
+  background-color: transparent;
+}
+
+.esri-view-width-xsmall .esri-expand--auto .esri-expand__mask--expanded {
+  background-color: transparent;
+}
+
+.esri-popup__main-container {
+  width: 25rem !important;
+}
+
+.esri-view-width-small, .esri-view-width-xsmall {
+  .esri-popup__main-container {
+    width: calc(100vw - 10px) !important;
+    max-width: 22.5rem !important;
+    position: relative !important;
+    margin-bottom: 10px !important;
+  }
+
+  .esri-feature__content-element {
+    padding: 0;
+  }
+
+  .esri-popup--shadow {
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.15), 
+                2px 2px 4px rgba(0, 0, 0, 0.15), 
+                0px 4px 8px rgba(0, 0, 0, 0.15); 
+  }
+
+  .esri-expand--auto
+  .esri-expand__container--expanded
+  > .esri-expand__panel {
+    position: absolute;
+    right: 14.375rem;
+  }
+
+  .esri-expand--auto .esri-expand__container--expanded {
+    width: 14.375rem;
+    height: 10.5625rem;
+    position: absolute;
+    right: 0rem;
+  }
+}

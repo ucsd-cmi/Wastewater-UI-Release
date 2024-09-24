@@ -1,0 +1,10 @@
+export * from "./Header";
+export { default as Header } from "./Header";
+export * from "./MapLayer";
+export { default as MapLayer } from "./MapLayer";
+export * from "./SearchBox";
+export { default as SearchBox } from "./SearchBox";
+export * from "./TrendTable";
+export { default as TrendTable } from "./TrendTable";
+export * from "./FAQs";
+export { default as FAQs } from "./FAQs";

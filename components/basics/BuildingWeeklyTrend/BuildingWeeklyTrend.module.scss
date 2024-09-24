@@ -1,0 +1,82 @@
+@include bp-up("md") {
+  .detected:hover {
+    background-color: $medium-red-hover;
+    width: 35.5rem;
+    max-width: 35.5rem;
+    z-index: 999;
+  }
+
+  .monitored:hover {
+    background-color: $light-blue-hover;
+    width: 35.5rem;
+    max-width: 35.5rem;
+    z-index: 999;
+  }
+
+  .unavailable:hover {
+    background-color: $dark-gray-hover;
+    color: white;
+    width: 35.5rem;
+    max-width: 35.5rem;
+    z-index: 999;
+  }
+
+  .paused:hover {
+    background-color: $medium-gray-hover;
+    width: 35.5rem;
+    max-width: 35.5rem;
+    z-index: 999;
+  }
+
+  .notMonitored:hover {
+    background-color: $light-gray-hover;
+    width: 35.5rem;
+    max-width: 35.5rem;
+    z-index: 999;
+  }
+}
+
+.buildingName {
+  position: absolute;
+  left: 0.625rem;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 14rem;
+  text-overflow: ellipsis;
+
+  @include bp-down("md") {
+    max-width: 19.375rem;
+  }
+}
+
+.wrapper {
+  display: flex;
+
+  > div:nth-child(n + 2) {
+    margin-left: 0.0625rem;
+  }
+
+  @include bp-down("md") {
+    margin-left: .125rem;
+    margin-right: .25rem;
+    justify-content: space-between;
+  }
+  
+  @include bp-down("sm") {
+    justify-content: left;
+    flex-direction: row;
+  }
+}
+
+.exposureTrue {
+  width: 8px;
+  height: 8px;
+  background-image: url("/exposure.png");
+  background-size: contain;
+  position: absolute;
+  right: .5rem;
+}
+
+.exposureFalse {
+  display: none;
+}

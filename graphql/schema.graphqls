@@ -1,0 +1,31 @@
+type VariantFraction {
+  date: Time!
+  lineage: String!
+  variant: String!
+  fraction: Float!
+  manholeID: String!
+}
+
+type VariantStats {
+  lineage: String!
+  variant: String!
+  fraction: Float!
+}
+
+type labelColor {
+  lineageLabel: String!
+  variantLabel: String!
+  color: String!
+}
+
+type Query {
+  variantFractions(date: Time!): [VariantFraction!]!
+  variantStats(date: Time!): VariantStats!
+  getLabelColors: [labelColor!]!
+}
+
+type Mutation {
+  updateVariantDB: Boolean!
+}
+
+scalar Time

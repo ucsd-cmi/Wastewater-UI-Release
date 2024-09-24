@@ -1,0 +1,66 @@
+.playButton {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background-color: #c9d8e5;
+  justify-content: center;
+  border-right: 1px solid #296298;
+  border-radius: 4px 0px 0px 4px;
+  position: relative;
+
+  > button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 60px;
+  }
+}
+
+.errorText {
+  color: red;
+  font-family: Roboto Condensed;
+}
+
+.wrapper {
+  display: flex;
+  margin: 2rem 0rem;
+  border: 1px solid #296298;
+  border-radius: 4px;
+}
+
+.hintText {
+  color: #a9a9a9;
+  font-family: Roboto Condensed;
+}
+
+.defaultText {
+  color: #222222;
+  font-family: Roboto Condensed;
+}
+
+.legendWrapper {
+  display: flex;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.BarChart {
+  flex: 11;
+  padding: 1rem 2rem 2rem 2rem;
+}
+
+.searchWrapper {
+  position: relative;
+  border: 1px solid #296298;
+  border-radius: 4px;
+}
+
+.searchBackground {
+  position: relative;
+  height: 2.8rem;
+  width: 100%;
+  border: 0px;
+  border-radius: 4px;
+  background-color: white;
+}

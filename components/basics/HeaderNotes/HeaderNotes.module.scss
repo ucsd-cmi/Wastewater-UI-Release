@@ -1,0 +1,81 @@
+.noteContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    height: 3.625rem;
+    position: relative;
+    top: .3125rem;
+    margin-right: 1.25rem;
+}
+
+.noteLeftBorder {
+    width: .25rem;
+    height: 100%;
+    background: $yellow;
+}
+
+.noteSubContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+    padding: .125rem .5rem;   
+    border: 2px solid $yellow;
+    box-sizing: border-box;
+}
+
+.note {
+    @include font-type("body 3 condensed");
+    color: $ultimate-blue;
+    width: 33rem;
+    left: 8px;
+    top: 8px;
+}
+
+.note a {
+    color: $ultimate-blue;
+}
+
+.iconContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.questionIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.noteList {
+    padding-left: 1rem;
+}
+
+@include bp-down("xxl") {
+    .noteContainer {
+        padding: 0;
+        width: 35.75rem;
+        height: 3.625rem;
+        margin-right: 0;
+        top: .5rem;
+    }
+}
+
+@include bp-down("md") {
+    .noteContainer {
+        padding: 0;
+        width: 21.438rem;
+        height: 5.875rem;
+        margin-right: 0;
+    }
+
+    .noteSubContainer {
+        width: 21.188rem;
+    }
+
+    .note {
+        width: 17.875rem;
+    }
+}

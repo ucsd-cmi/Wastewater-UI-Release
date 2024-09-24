@@ -1,0 +1,89 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "downlevelIteration": true,
+    "jsx": "preserve",
+    "baseUrl": "./",
+    "paths": {
+      "@apis/*": [
+        "apis/*"
+      ],
+      "@apis": [
+        "apis"
+      ],
+      "@components/*": [
+        "components/*"
+      ],
+      "@components": [
+        "components"
+      ],
+      "@pages/*": [
+        "pages/*"
+      ],
+      "@pages": [
+        "pages"
+      ],
+      "@constants/*": [
+        "constants/*"
+      ],
+      "@constants": [
+        "constants"
+      ],
+      "@basics/*": [
+        "components/basics/*"
+      ],
+      "@basics": [
+        "components/basics"
+      ],
+      "@icons/*": [
+        "assets/icons/*"
+      ],
+      "@icons": [
+        "assets/icons"
+      ],
+      "@images/*": [
+        "assets/images/*"
+      ],
+      "@images": [
+        "assets/images"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ],
+      "@utils": [
+        "utils"
+      ],
+      "@hooks/*": [
+        "hooks/*"
+      ],
+      "@hooks": [
+        "hooks"
+      ],
+    },
+    "incremental": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "image.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

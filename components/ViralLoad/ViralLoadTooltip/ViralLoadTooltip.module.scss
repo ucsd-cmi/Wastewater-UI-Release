@@ -1,0 +1,41 @@
+.tooltip {
+  font-family: Roboto Condensed;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: #a9a9a9;
+  background-color: white;    
+  position: absolute;
+  width: 11rem;
+  border-radius: 0rem 0rem 0.4rem 0.4rem; 
+  z-index: 1000;
+}
+
+.tooltipDate {
+  padding: 0.125rem;
+  padding-left: 0.31rem;
+  font-size: 12px;
+  background-color: #f8f8f8;
+  color: #4d4d4d;
+  text-align: left;
+  border-style: solid;
+  text-anchor: center;
+  border-width: 0.1rem;
+  border-color: #a9a9a9;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: solid;
+  border-left-style: none;
+}
+
+.tooltipData {
+	padding: 0.25rem;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tooltipRect {
+  border-width: 1px;
+  border-style: none none none dashed;
+  border-color: #296298;
+}

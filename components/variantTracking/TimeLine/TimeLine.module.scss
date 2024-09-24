@@ -1,0 +1,54 @@
+.wrapper {
+  position: relative;
+  width: 900px;
+  margin-top: -30px;
+
+  li {
+    background-image: none !important;
+    border: none !important;
+  }
+  svg {
+    visibility: hidden !important;
+  }
+  span {
+    border: none !important;
+    background-color: unset;
+  }
+}
+
+.parentWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border: 1px solid #296298;
+  background-color: #c9d8e5;
+  border-radius: 4px;
+  margin-top: 2rem;
+  font-family: Roboto Condensed;
+}
+
+.currentDate {
+  position: absolute;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width: 90%;
+}
+
+.dateWrapper {
+  display: flex;
+  align-items: center;
+
+  span {
+    margin-right: 5px;
+  }
+
+  svg {
+    width: 2em;
+    height: unset;
+  }
+
+  input[type="text"] {
+    border: 1px solid #296298 !important;
+    border-radius: 4px;
+  }
+}

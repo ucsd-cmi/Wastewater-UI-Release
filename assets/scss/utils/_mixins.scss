@@ -1,0 +1,145 @@
+@use 'global-vars'as *;
+@use 'bootstrap-breakpoints';
+
+// Breakpoint wrappers for bootstrap's media breakpoints
+@mixin bp($size) {
+  @include bootstrap-breakpoints.media-breakpoint-only($size) {
+    @content;
+  }
+}
+
+@mixin bp-up($size) {
+  @include bootstrap-breakpoints.media-breakpoint-up($size) {
+    @content;
+  }
+}
+
+@mixin bp-down($size) {
+  @include bootstrap-breakpoints.media-breakpoint-down($size) {
+    @content;
+  }
+}
+
+
+/**
+ * STYLE GUIDE TYPOGRAPHY MIXINS.
+ */
+
+@mixin font-type($type) {
+  font-family: $primary-font-stack;
+
+  @if $type=="h1" {
+    font-size: $xxxl;
+    font-weight: 600;
+    line-height: 2.7319rem;
+    size: 2rem;
+  }
+
+  @else if $type=="h1 mobile" {
+    font-size: $xxl;
+    font-weight: 600;
+    line-height: 1.8781rem;
+    size: 1.375rem;
+  }
+
+  @else if $type=="h2" {
+    font-family: $secondary-font-stack;
+    font-size: $l;
+    font-weight: 700;
+    line-height: 1.3181rem;
+    size: 1.125rem;
+  }
+
+  @else if $type=="h3" {
+    font-size: $baseline;
+    font-weight: 700;
+    line-height: 1.3662rem;
+    size: 1rem
+  }
+
+  @else if $type=="h4" {
+    font-size: $s;
+    font-weight: 700;
+    line-height: 1.195rem;
+    size: 0.875rem;
+  }
+
+  @else if $type=="h5" {
+    font-size: $xxs;
+    font-weight: 700;
+    line-height: 0.8538rem;
+    size: 0.625rem;
+  }
+
+  @else if $type=="body 1" {
+    font-size: $xl;
+    font-weight: 400;
+    line-height: 1.465rem;
+    size: 1.25rem;
+  }
+
+  @else if $type=="body 1 bold" {
+    font-size: $xl;
+    font-weight: 700;
+    line-height: 1.465rem;
+    size: 1.25rem;
+  }
+
+  @else if $type=="body 1 condensed" {
+    font-family: $secondary-font-stack;
+    font-size: $xl;
+    font-weight: 400;
+    line-height: 1.465rem;
+    size: 1.25rem;
+  }
+
+  @else if $type=="body 2" {
+    font-size: $baseline;
+    font-weight: 400;
+    line-height: 1.1719rem;
+    size: 1rem;
+  }
+
+  @else if $type=="body 2 condensed" {
+    font-size: $secondary-font-stack;
+    font-weight: 400;
+    line-height: 1.1719rem;
+    size: 1rem;
+  }
+
+  @else if $type=="body 3" {
+    font-size: $s;
+    font-weight: 400;
+    line-height: 1.0256rem;
+    size: 0.875rem;
+  }
+
+  @else if $type=="body 3 condensed" {
+    font-family: $secondary-font-stack;
+    font-size: $s;
+    font-weight: 400;
+    line-height: 1.0256rem;
+    size: 0.875rem;
+  }
+
+  @else if $type=="caption 1" {
+    font-size: $xs;
+    font-weight: 400;
+    line-height: 1.0244rem;
+    size: 0.75rem;
+  }
+
+  @else if $type=="caption 2" {
+    font-size: $xxs;
+    font-weight: 400;
+    line-height: 0.8538rem;
+    size: 0.625rem;
+  }
+
+  @else if $type=="caption 2 demi bold" {
+    font-size: $xxs;
+    font-weight: 600;
+    line-height: 0.8538rem;
+    size: 0.625rem;
+  }
+}

@@ -1,0 +1,23 @@
+.legendDiv {
+  padding-top: 1rem;
+  padding-left: 0.4rem;
+  background-color: rgba(248, 249, 250, 1);
+}
+
+.legend {
+  overflow: visible;
+  display: block;
+  width: 100%;
+  * {
+    white-space: pre;
+    font-family: Roboto Condensed;
+    font-size: 11px;
+  }
+}
+
+.legendTitle {
+  padding-left: 1.8rem;
+  font-weight: bold;
+  font-family: Roboto Condensed;
+  font-size: 13px;
+}

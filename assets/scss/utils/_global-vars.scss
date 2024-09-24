@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400&display=swap');
+/**
+ * STYLE GUIDE COLORS.
+*/
+
+// color palette
+$dark-gray: #4d4d4d;
+$medium-gray: #a9a9a9;
+$light-gray: #e5e5e5;
+$dark-red: #d53e39;
+$alert-red: #ff0000;
+$medium-red: #ff9e9e;
+$light-red: linear-gradient(90deg, #ffdfde 0%, rgba(255, 249, 249, 0.06) 100%);
+$ultimate-blue: #0d3952;
+$dark-blue: #296298;
+$medium-blue: #489bca;
+$light-blue: #6bcffa;
+$yellow: #fce466;
+$notes: #bd1ca3;
+
+// hover backgrounds
+$medium-red-hover: rgba(255, 158, 158, .4);
+$light-blue-hover: rgba(107, 207, 250, .4);
+$dark-gray-hover: rgba(77, 77, 77, .4);
+$medium-gray-hover: rgba(169, 169, 169, .4);
+$light-gray-hover: rgba(229, 229, 229, .4);
+
+/**
+ * STYLE GUIDE TYPOGRAPHY.
+ */
+
+// Font Stacks
+$primary-font-stack: 'Roboto', sans-serif, Arial, monospace;
+$secondary-font-stack: 'Roboto Condensed';
+
+// Font Sizes
+$xxxl: 2em;
+$xxl: 1.375em;
+$xl: 1.25em;
+$l: 1.125em;
+$baseline: 1em;
+$s: 0.875em;
+$xs: 0.75em;
+$xxs: 0.625em;

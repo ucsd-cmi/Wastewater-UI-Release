@@ -1,0 +1,107 @@
+.wrapper {
+  width: 36.8125rem;
+  height: 1.5rem;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: space-between;
+  padding-left: .75rem;
+  margin-bottom: .5rem;
+
+  > div {
+    &:nth-child(1) {
+      width: 14rem;
+      text-align: left;
+      margin-right: 0;
+    }
+
+    &:nth-last-child(1) {
+      margin-right: .25rem;
+    }
+}
+}
+
+.wrapperPopUp {
+    width: 100%;
+    margin-left: 0px;
+    justify-content: space-between;
+    display: flex;
+    background-color: #f8f8f8;
+    padding-left: .125rem;
+    padding-right: .25rem;
+
+    > div {
+        &:nth-child(1) {
+          margin-right: .875rem;
+        }
+  
+        &:nth-child(n + 2) {
+          margin-right: 1.625rem;
+        }
+  
+        &:nth-last-child(1) {
+          margin-right: 0rem;
+        }
+    }
+  
+    @include bp-down("md") {
+        padding-left: 0rem;
+        padding-right: 0rem;
+
+        > div {
+            display: inline-block;
+            &:nth-child(1) {
+              margin-right: .875rem;
+            }
+      
+            &:nth-child(n + 2) {
+              margin-right: 1.25rem;
+            }
+
+            &:nth-last-child(2) {
+                margin-right: 1rem;
+            }
+  
+            &:nth-last-child(1) {
+              margin-right: 0.125rem;
+            }
+        }
+    }
+}
+
+.exposureDivPopUp {
+    width: .75rem;
+    text-align: left;
+
+    @include bp-down("md") {
+      width: 1.375rem;
+      text-align: center;
+    }
+}
+
+.exposureDiv {
+  width: 2.1875rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  margin-right: 1rem;
+  text-align: right;
+
+  > span {
+    margin-bottom: .25rem;
+  }
+}
+
+.true {
+  background-image: url("/exposure.png");
+  background-size: contain;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+}
+
+.false {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+}

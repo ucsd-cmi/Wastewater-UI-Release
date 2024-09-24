@@ -1,0 +1,10 @@
+.wrapper {
+  width: 39.5rem;
+  margin: auto;
+  padding-bottom: 1.5rem;
+  @include font-type("body 3");
+
+  @include bp-down("md") {
+    width: 20.5rem;
+  }
+}

@@ -1,0 +1,59 @@
+.wrapper {
+  width: 37.25rem;
+  border: .0625rem solid $light-gray;
+  margin-top: 1rem;
+  @include bp-down("xl") {
+    margin-left: 0rem;
+  }
+  @include bp-down("lg") {
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+  @include bp-down("md") {
+    margin-top: 1rem;
+    margin-left: 0rem;
+    width: 21.438rem;
+  }
+  @include bp-down("sm") {
+    margin-left: 1rem;
+  }
+  margin-bottom: 1rem;
+}
+
+.headerRow {
+  height: 2.5625rem;
+  background-color: $light-gray;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  gap: .5rem;
+  padding-left: .5rem;
+}
+
+.headerText {
+  width: 8.125rem;
+  @include font-type("caption 1");
+}
+
+.dataRow {
+  height: 2.5625rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  gap: .5rem;
+  padding-left: .5rem;
+  border-top: .0625rem solid $light-gray;
+}
+
+.dataLabel {
+  width: 8.125rem;
+  @include font-type("caption 1");
+}
+
+.dataCell {
+  width: 8.125rem;
+  @include font-type("h3");
+  color: $dark-red;
+}

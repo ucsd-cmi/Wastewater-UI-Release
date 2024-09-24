@@ -1,0 +1,11 @@
+export { default as SearchIcon } from "./search.svg";
+export { default as Question } from "./question.svg";
+export { default as ToggleOff } from "./toggle_off.svg";
+export { default as ToggleOn } from "./toggle_on.svg";
+export { default as CloseIcon } from "./close.svg";
+export { default as FAQCollapsed } from "./faq_collapsed.svg";
+export { default as FAQExpanded } from "./faq_expanded.svg";
+export { default as PlayButton } from "./playBtn.svg";
+export { default as StopButton } from "./stopBtn.svg";
+export { default as VariantIcon } from "./variant.svg";
+export { default as Arrow } from "./arrow.svg";

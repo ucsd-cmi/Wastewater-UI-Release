@@ -1,0 +1,59 @@
+$small-block: 2.1875rem;
+$large-block: 8rem;
+
+.size {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: $small-block;
+  height: 2.5625rem;
+  margin-right: 1rem;
+  @include bp-down("md") {
+    width: 1.375rem;
+    height: auto;
+    margin-right: 0rem;
+  }
+}
+
+.large {
+  width: $large-block;
+  justify-content: left;
+  align-items: start;
+  padding-left: 0.5rem;
+}
+
+.weekDay {
+  color: $medium-gray;
+
+  @include font-type("caption 1");
+
+  @include bp-down("md") {
+    display: none;
+  }
+}
+
+.weekend {
+  color: $medium-gray;
+
+  @include font-type("caption 1");
+}
+
+.regularDate {
+  @include font-type("body 3");
+
+  @include bp-down("md") {
+    @include font-type("caption 2");
+  }
+}
+
+.wrapper {
+  width: $small-block;
+  @include bp-down("md") {
+    width: 1.375rem;
+  }
+}
+
+.wrapperLarge {
+  width: $large-block;
+}

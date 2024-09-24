@@ -1,0 +1,79 @@
+.detected {
+  background-color: $medium-red;
+}
+
+.monitored {
+  background-color: $light-blue;
+}
+
+.unavailable {
+  background-color: $dark-gray;
+  color: white;
+}
+
+.paused {
+  background-color: $medium-gray;
+}
+
+.notMonitored {
+  background-color: $light-gray;
+}
+
+.oneSample {
+  background-color: white;
+}
+
+.size {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 2.9375rem;
+  width: 3.1875rem;
+
+  @include font-type("body 2");
+
+  @include bp-down("md") {
+    width: 21.4375rem !important;
+    height: 2.125rem !important;
+  }
+
+  @include bp-up("sm"){
+    @include font-type("body 1 condensed");
+  }
+
+  &PopUp {
+    height: 1.875rem !important;
+    width: 3.1875rem !important;
+
+    &:after{
+      height: 1.875rem !important;
+      @include bp-down("md") {
+        right: 1.25rem !important;
+        border-left: .5rem solid white;
+      }
+    }
+
+    @extend .size;
+  }
+}
+
+.size:after {
+  content: "";
+  display: block;
+  width: .0625rem;
+  height: 2.9375rem;
+  border-left: .5rem solid white;
+  position: absolute;
+  top: 0px;
+  right: 1.75rem;
+}
+
+.sizeWithWord {
+  width: 17.3125rem;
+}
+
+@include bp-down("md") {
+  .sizeWithWord:after {
+    display: none;
+  }
+}
